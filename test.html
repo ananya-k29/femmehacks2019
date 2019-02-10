@@ -11,7 +11,6 @@
 	<body>
 	<style>
 
-
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -54,16 +53,16 @@
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'Games')">Games</button>
   <button class="tablinks" onclick="openTab(event, 'Facts')">Facts</button>
-  <button class="tablinks" onclick="openTab(event, 'Fun')">Fun</button>
+  <button class="tablinks" onclick="openTab(event, 'Chat')">Chat</button>
 </div>
 
-<div id="Home" class="tabcontent">
-  <h1>Home</h1>
-  <h1>Welcome to SafeSpace</h1>
-	<h3>This website is for kids between ages 7 and 10</h3>
-	<h3>SafeSpace is designed to keep the children safe and keep the parents from worrying!</h3>
+<div id="Games" class="tabcontent">
+  <h1>Games</h1>
+  <h3><span style="color: teal"><a href="tictacto.html">TicTacToe</a>
+<a href="http://www.connectfour.org/">Connect Four</a>
+<a href="https://www.chess.com/play/computer">Chess</a></span></h3></p>
 </div>
 
 <div id="Facts" class="tabcontent">
@@ -97,31 +96,9 @@
 	</details>
 </div>
 
-<div id="Fun" class="tabcontent">
-  <h1>Fun</h1>
-  <details>
-		<summary>jokes</summary>
-		<h3>What kind of snake does your math teacher own?</h3>
-			<button type="button" onclick="alert('A pi-thon!')">Click for answer!</button>
-		<br>
-		<h3>What do you call 8 Hobbits?</h3>
-			<button type="button" onclick="alert('A Hobbyte!')">Click for answer!</button>
-		<br>
-		<h3>What is a duck's favorite snack?</h3>
-			<button type="button" onclick="alert('cheese and QUACKers!')">Click for answer!</button>
-		</details>
-  <br>
-
+<div id="Chat" class="tabcontent">
   <h3>Chat</h3>
   <a href="chatwindow.html">Chat</a>
-
-  <br>
-
-  <h3>Games</h3>
-  <h3><span style="color: teal">
-  	<a href="https://playtictactoe.org">TicTacToe</a>
-	<a href="http://www.connectfour.org/">Connect Four</a>
-	<a href="https://www.chess.com/play/computer">Chess</a></span></h3>
 </div>
 
 <script>
@@ -139,7 +116,72 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 </script>
-</style>
+
+<ul>
+	<a href="#home"><span style="color: orange">Home</span></a>
+	<a href="#about"><span style="color: green">About</span></a>
+	<a href="#learn-more"><span style="color: purple">Learn More</span></a>
+	<a href="#games"><span style="color: pink">Games</span></a>
+	<div id="games">
+		<h1><span style="color: teal"><a href="https://playtictactoe.org">TicTacToe</a>
+<a href="http://www.connectfour.org/">Connect Four</a>
+<a href="https://www.chess.com/play/computer">Chess</a></span></h1>
+
+	<div id="home">
+		<h1><span style="color: red">Welcome to SafeSpace!</span></h1>
+	</div>
+
+	<div id="about">
+		<h1><span style="color: gold">This is a kid-friendly platform for making friends!</span></h1>
+	</div>
+
+	<div id="learn-more">
+		<h1><span style="color: blue">We want kids to have fun and stay safe on the internet!</span></h1>
+	</div>
+</ul>
+<img src = "https://www.clipartmax.com/png/middle/87-875700_children-holding-hands-png-happyhappy-kids-kids-holding-hands-png.png"/>
+	<details>
+		<summary>fun facts</summary>
+		<details>
+			<summary>animals</summary>
+				<p>a crocodile can't stick its tongue out</p>
+				<br>
+				<p>butterflies can taste with their feet</p>
+				<br>
+				<p>a group of porcupines is called a 'prinkle'</p>
+		</details>
+		<details>
+			<summary>science</summary>
+				<p>a sneeze can travel up to 100 miles per hour</p>
+				<br>
+				<p>almost 90% of snow is air</p>
+				<br>
+				<p>plastic takes about 450 years to decompose</p>
+		</details>
+		<details>
+			<summary>history</summary>
+				<p>William Shakespeare wrote 37 plays and over 150 poems</p>
+				<br>
+				<p>dinosaur bones were discovered in china over 2000 years ago</p>
+				<br>
+				<p>Abraham Lincoln was the tallest president</p>
+		</details>
+	</details>
+
+
+	<details>
+		<summary>jokes</summary>
+		<h3>What kind of snake does your math teacher own?</h3>
+			<button type="button" onclick="alert('A pi-thon!')">Click for answer!</button>
+		</div>
+		<br>
+		<h3>What do you call 8 Hobbits?</h3>
+			<button type="button" onclick="alert('A Hobbyte!')">Click for answer!</button>
+		<br>
+		<h3>What is a duck's favorite snack?</h3>
+			<button type="button" onclick="alert('cheese and QUACKers!')">Click for answer!</button>
+	</details>
+<div><h5>Access this doc to add comments or ask questions at:"https://docs.google.com/document/d/1o5tb4wxGNdFT4LG-Eka8V7zBwIcp2xEYFPeYrSxCRYI/edit"</h5></div>
 
 </body>
 </html>

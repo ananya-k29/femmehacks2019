@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Home')">Games</button>
+  <button class="tablinks" onclick="openTab(event, 'Facts')">Facts</button>
+  <button class="tablinks" onclick="openTab(event, 'Fun')">Fun</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h1>Home</h1>
+  <h1>Welcome to SafeSpace</h1>
+	<h3>This website is for kids between ages 7 and 10</h3>
+	<h3>SafeSpace is designed to keep the children safe and keep the parents from worrying!</h3>
+</div>
+
+<div id="Facts" class="tabcontent">
+  <h3>Fun Facts</h3>
+  <details>
+		<summary>fun facts</summary>
+		<details>
+			<summary>animals</summary>
+				<p>a crocodile can't stick its tongue out</p>
+				<br>
+				<p>butterflies can taste with their feet</p>
+				<br>
+				<p>a group of porcupines is called a 'prinkle'</p>
+		</details>
+		<details>
+			<summary>science</summary>
+				<p>a sneeze can travel up to 100 miles per hour</p>
+				<br>
+				<p>almost 90% of snow is air</p>
+				<br>
+				<p>plastic takes about 450 years to decompose</p>
+		</details>
+		<details>
+			<summary>history</summary>
+				<p>William Shakespeare wrote 37 plays and over 150 poems</p>
+				<br>
+				<p>dinosaur bones were discovered in china over 2000 years ago</p>
+				<br>
+				<p>Abraham Lincoln was the tallest president</p>
+		</details>
+	</details>
+</div>
+
+<div id="Fun" class="tabcontent">
+  <h1>Fun</h1>
+  <details>
+		<summary>jokes</summary>
+		<h3>What kind of snake does your math teacher own?</h3>
+			<button type="button" onclick="alert('A pi-thon!')">Click for answer!</button>
+		<br>
+		<h3>What do you call 8 Hobbits?</h3>
+			<button type="button" onclick="alert('A Hobbyte!')">Click for answer!</button>
+		<br>
+		<h3>What is a duck's favorite snack?</h3>
+			<button type="button" onclick="alert('cheese and QUACKers!')">Click for answer!</button>
+  <br>
+
+  <h3>Chat</h3>
+  <a href="chatwindow.html">Chat</a>
+
+  <br>
+
+  <h3>Games</h3>
+  <h3><span style="color: teal">
+  	<a href="tictacto.html">TicTacToe</a>
+	<a href="http://www.connectfour.org/">Connect Four</a>
+	<a href="https://www.chess.com/play/computer">Chess</a></span></h3>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
